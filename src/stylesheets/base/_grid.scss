@@ -25,6 +25,18 @@
   }
 }
 
+.row-of-cards {
+  .col {
+    @include media("<lg") {
+      margin-bottom: 30px;
+    }
+
+     @include media("<md") {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 // Remove gutters and extra padding from the grid
 
 .coll {

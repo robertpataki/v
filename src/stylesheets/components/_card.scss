@@ -4,14 +4,9 @@
   color: #333333;
   border: 1px solid #cccccc;
   background: #ffffff;
-
-  @include media("<lg") {
-    margin-bottom: 30px;
-  }
+  height: 100%;
 
    @include media("<md") {
-    margin-bottom: 30px;
-
     .card__details {
       min-height: auto;
     }
