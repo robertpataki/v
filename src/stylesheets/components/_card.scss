@@ -1,6 +1,11 @@
 .card {
   color: #333333;
   border: 1px solid #cccccc;
+  padding-bottom: 20px;
+
+  @include media("<lg") {
+    margin-bottom: 30px;
+  }
 }
 
 .card__image {
@@ -15,8 +20,18 @@
 .card__details {
   position: relative;
   display: block;
-  padding: 13px 15px 18px;
-  min-height: 180px;
+  padding: 10px 15px 0;
+  min-height: 140px;
+}
+
+.card__footer {
+  padding: 0 15px 0;
+
+  @include clearfix;
+
+  .card__link + .card__button {
+    float: right;
+  }
 }
 
 .card__title {
@@ -27,7 +42,7 @@
 
 .card__summary {
   @include font(12px, 22px);
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 
 .card__button {
@@ -37,12 +52,7 @@
 .card__input {
   display: block;
   width: 100%;
-  margin-bottom: 5px;
-}
-
-.card__sticky-bottom {
-  position: absolute;
-  bottom: 0;
+  margin-top: 5px;
 }
 
 .card__link {

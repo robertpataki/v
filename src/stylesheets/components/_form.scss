@@ -1,8 +1,10 @@
 .form-field {
+  display: block;
+  position: relative;
   border-radius: $global-radius;
   outline: none;
   border: 1px solid #e1e1e1;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
   padding: 0 6px 0;
 
   @include font(11px, 21px);
