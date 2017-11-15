@@ -4,7 +4,6 @@
   position: relative;
   display: block;
   font-family: $semibold-font;
-  padding: 2rem 3rem;
 
   @extend %no-select;
   @extend %inline-list;
@@ -15,12 +14,6 @@
     &:not(:last-child) {
       margin-right: 1.25rem;
     }
-  }
-
-  a {
-    color: $col-septenary;
-    font-size: 1.2rem;
-    text-decoration: none;
   }
 }
 

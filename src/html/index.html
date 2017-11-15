@@ -3,17 +3,50 @@
 {% block content %}
   <header class="l-header" role="banner">
     <nav class="l-nav" role="navigation">
-      <ul class="main-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#" id="sidebar-trigger">Sidebar</a></li>
-      </ul>
+      <div class="container">
+        <ul class="main-menu">
+          <li>
+            <a href="#" class="icon-button icon-button--one ">
+              <i>{% include 'shared/icons/_icon_01.svg.html' %}</i>
+              <span>One</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-button icon-button--two ">
+              <i>{% include 'shared/icons/_icon_02.svg.html' %}</i>
+              <span>Two</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-button icon-button--three ">
+              <i>{% include 'shared/icons/_icon_03.svg.html' %}</i>
+              <span>Three</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-button icon-button--four ">
+              <i>{% include 'shared/icons/_icon_04.svg.html' %}</i>
+              <span>Four</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <div class="l-page visible-grids">
     <main class="l-main" role="main">
+      <section class="section section--carousel">
+        <div class="container-fluid">
+          <div class="carousel">
+            <ul class="carousel__items">
+              <li class="carousel__item">
+                <img src="images/hero.jpg" alt="A very happy family" >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="section section--main">
         <div class="container-fuid">
           <div class="container">

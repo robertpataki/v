@@ -1,0 +1,38 @@
+.icon-button {
+  border-radius: $global-radius;
+  color: #ffffff;
+  font-family: $semibold-font;
+  position: relative;
+  min-width: 148px;
+  display: inline-block;
+  padding: 12px 15px;
+  text-decoration: none;
+
+  @include font(18px, 16px);
+  @include clearfix;
+
+  i {
+    float: left;
+    height: 16px;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.icon-button--one {
+  background: #017bc3;
+}
+
+.icon-button--two {
+  background: #00ac51;
+}
+
+.icon-button--three {
+  background: #bcd631;
+}
+
+.icon-button--four {
+  background: #ee4a9a;
+}
