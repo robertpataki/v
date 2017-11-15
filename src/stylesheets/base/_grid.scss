@@ -1,0 +1,48 @@
+//
+// Grid settings
+//
+
+.row--content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.visible-grid {
+  .row {
+    background: rgba(0, 255, 255, 0.05);
+  }
+
+  .coll, .col, .col-no-gutter {
+    background: rgba(255, 255, 0, 0.2);
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px dotted $col-quinary;
+
+
+    .coll, .col, .col-no-gutter {
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px dotted $col-quinary;
+    }
+  }
+}
+
+// Remove gutters and extra padding from the grid
+
+.coll {
+  display: block;
+  width: 100%;
+}
+
+.col--no-gutter {
+  display: block;
+  width: 100%;
+  @extend .no-gutters;
+  // @extend .no-side-padding;
+}
+
+.container {
+  @include media("<=md") {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+

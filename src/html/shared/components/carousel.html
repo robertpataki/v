@@ -1,0 +1,82 @@
+<div class="carousel">
+  <div class="container carousel__foreground no-side-padding">
+    <div class="carousel-items-wrapper">
+      <ul class="carousel-items">
+        <!-- carousel item #1 -->
+        <li class="carousel-item is-active">
+          <div class="carousel-item__photo"">
+            <img src="{{ doc_root }}/images/carousel-photo-1.jpg" alt="carouselousel photo">
+          </div>
+          <div class="carousel-item__contents-wrapper">
+            <div class="carousel-item__contents">
+              <p class="carousel-item__copy">“Interactively transform alternative best practices whereas economically sound paradigms.”</p>
+              <span class="carousel-item__author-name">John Doe</span>
+              <span class="carousel-item__author-title">Cabin Crew</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- carousel item #2 -->
+        <li class="carousel-item">
+          <div class="carousel-item__photo"">
+            <img src="{{ doc_root }}/images/carousel-photo-2.jpg" alt="carouselousel photo">
+          </div>
+          <div class="carousel-item__contents-wrapper">
+            <div class="carousel-item__contents">
+              <p class="carousel-item__copy">“Dramatically productivate front-end portals vis-a-vis functionalized outsourcing.”</p>
+              <span class="carousel-item__author-name">Jane Doe</span>
+              <span class="carousel-item__author-title">Cabin Crew</span>
+            </div>
+          </div>
+        </li>
+        
+        <!-- carousel item #3 -->
+        <li class="carousel-item">
+          <div class="carousel-item__photo"">
+            <img src="{{ doc_root }}/images/carousel-photo-3.jpg" alt="carouselousel photo">
+          </div>
+          <div class="carousel-item__contents-wrapper">
+            <div class="carousel-item__contents">
+              <p class="carousel-item__copy">“Objectively target highly efficient meta-services via visionary web-readiness.”</p>
+              <span class="carousel-item__author-name">John Roe</span>
+              <span class="carousel-item__author-title">Cabin Crew</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- carousel item #4 -->
+        <li class="carousel-item">
+          <div class="carousel-item__photo"">
+            <img src="{{ doc_root }}/images/carousel-photo-4.jpg" alt="carouselousel photo">
+          </div>
+          <div class="carousel-item__contents-wrapper">
+            <div class="carousel-item__contents">
+              <p class="carousel-item__copy">“Completely harness seamless portals for go forward core competencies.”</p>
+              <span class="carousel-item__author-name">Jane Roe</span>
+              <span class="carousel-item__author-title">Cabin Crew</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="carousel__nav">
+        <div class="carousel__nav-button carousel__nav-button--prev is-active">
+          <span class="icon icon--active icon--tertiary">
+            {% include "shared/icons/icon__arrow-left.svg.html" %}
+          </span>
+          <span class="icon icon--disabled icon--quinary">
+            {% include "shared/icons/icon__arrow-left.svg.html" %}
+          </span>
+        </div>
+        <div class="carousel__nav-button carousel__nav-button--next is-active">
+          <span class="icon icon--active icon--tertiary">
+            {% include "shared/icons/icon__arrow-right.svg.html" %}
+          </span>
+          <span class="icon icon--disabled icon--quinary">
+            {% include "shared/icons/icon__arrow-right.svg.html" %}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
