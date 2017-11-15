@@ -2,42 +2,15 @@
 .l-page {
   @extend %flex-container;
   
-  align-items: stretch;
   position: relative;
-  min-height: 90vh;
 
   @include media("<md") {
     flex-direction: column;
-
-    .l-main,
-    .l-sidebar {
-      width: 100%;
-    }
-
-    .l-sidebar {
-      height: 50vh;
-    }
   }
 }
 .l-main {
-  width: 70%;
-  padding: 1rem;
-  padding-bottom: 3rem;
-}
-
-.l-sidebar {
-  width: 30%;
-  background: lighten($col-quaternary, 10%);
-  color: $col-septenary;
-  font-family: $semibold-font;
-  overflow: hidden;
-}
-
-.l-main,
-.l-sidebar {
   position: relative;
-  min-height: 100%;
-  text-align: center;
+  width: 100%;
 }
 
 .l-header {
@@ -48,9 +21,12 @@
 
 .l-footer {
   position: relative;
-  padding: 3rem;
-  text-align: center;
-  font-family: $semibold-font;
-  color: $col-septenary;
-  background: lighten($col-quaternary, 50%);
+  min-height: 530px;
+  font-family: $regular-font;
+  @include font(14px, 24px);
+  color: #cccccc;
+  background: #333333;
+  text-transform: uppercase;
+
+  @extend %flex-container;
 }

@@ -1,0 +1,16 @@
+.button {
+  border: 1px solid #e1e1e1;
+  color: #0175b9;
+  @include font(13px, 23px);
+  font-family: $semibold-font;
+  border-radius: $global-radius;
+  padding: 6px 11px 9px;
+  text-decoration: none;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+62,eeeeee+98 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 62%, #eeeeee 98%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 62%,#eeeeee 98%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 62%,#eeeeee 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
