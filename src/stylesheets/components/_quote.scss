@@ -64,6 +64,7 @@
   font-family: $regular-font;
   font-weight: 700;
   margin: $global-bottom-margin $global-bottom-margin * 0.5 20px 0;
+  height: auto !important;
 }
 
 .quote + .button {

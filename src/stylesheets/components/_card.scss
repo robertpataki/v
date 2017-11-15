@@ -8,6 +8,18 @@
   @include media("<lg") {
     margin-bottom: 30px;
   }
+
+   @include media("<md") {
+    margin-bottom: 30px;
+
+    .card__details {
+      min-height: auto;
+    }
+
+    .card__footer {
+      margin-top: 20px;
+    }
+  }
 }
 
 .card__image {
