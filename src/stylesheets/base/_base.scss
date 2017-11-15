@@ -36,7 +36,8 @@ html {
 }
 
 a {
-  color: $col-primary;
+  color: #333333;
+  text-decoration: underline;
   outline: none;
 
   @include no-tap-highlight();
@@ -45,7 +46,6 @@ a {
   &:hover {
     outline: none;
     text-decoration: none;
-    color: lighten($col-primary, 10%);
   }
 }
 

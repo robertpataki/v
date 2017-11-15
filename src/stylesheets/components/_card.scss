@@ -1,7 +1,9 @@
 .card {
+  position: relative;
+  padding-bottom: 20px;  
   color: #333333;
   border: 1px solid #cccccc;
-  padding-bottom: 20px;
+  background: #ffffff;
 
   @include media("<lg") {
     margin-bottom: 30px;
@@ -60,4 +62,52 @@
   font-family: $regular-font;
   text-decoration: underline;
   color: #666666;
+}
+
+.card--large {
+  padding: 12px 16px 20px;
+
+  &:not(.card--links) {
+    .card__summary {
+      max-width: 80%;
+      margin: 0;
+      line-height: 16px;
+    }
+  }
+
+  .card__title {
+    margin-bottom: 5px;
+  }
+
+  .card__image {
+    margin: 0 0 13px;
+    padding-bottom: 38.9%;
+  }
+
+  .card__details {
+    padding: 0;
+    min-height: auto;
+  }
+
+  .card__footer {
+    padding: 0;
+    margin-top: 25px;
+  }
+}
+
+.card--links {
+  .card__title {
+    margin-bottom: 0;
+  }
+
+  .card__summary {
+    padding-top: 0;
+
+    a {
+      display: block;
+      position: relative;
+      margin-bottom: 5px;
+      line-height: 20px;
+    }
+  }
 }
