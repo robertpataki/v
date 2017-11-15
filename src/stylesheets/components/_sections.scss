@@ -5,11 +5,18 @@
 .section--main {
   background: #ffffff;
   padding-top: 25px;
-  padding-bottom: 20px;
 }
 
 .section--sub {
   background: #f7f7f7;
   padding-top: 20px;
   padding-bottom: 40px;
+}
+
+.subsection {
+  margin: 20px auto;
+
+  @include media("<lg") {
+    margin-bottom: $global-bottom-margin * 2;
+  }
 }

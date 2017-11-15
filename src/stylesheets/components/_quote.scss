@@ -1,0 +1,79 @@
+.quote {
+  display: block;
+  position: relative;
+  border-left: none;
+  // padding: $global-bottom-margin * 2.5 0 $global-bottom-margin * 2.7 0;
+  margin: $global-bottom-margin * 2 auto 0;
+  font-family: $italic-font;
+  font-size: 130%;
+
+  @include media("<xl") {
+    margin-top: 0;
+  }
+
+  @include media("<xl", ">md") {
+    font-size: 110%;
+    margin: $global-bottom-margin * 1.1 auto 0;
+  }
+
+  @include media("<lg") {
+    font-size: 140%;
+    padding: $global-bottom-margin * 1.5 0 0 0;
+    margin: $global-bottom-margin * 1.5 auto 0;
+  }
+
+  @include media("<md") {
+    font-size: 120%;
+  }
+}
+
+.quote__text {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  max-width: 90%;
+  z-index: 0;
+  font-style: italic;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    font-size: 300%;
+    font-family: $italic-font;
+    line-height: 0;
+    color: #007ac2;
+    z-index: -1;
+  }
+
+  &::before {
+    content: '“';
+    left: -$global-bottom-margin * 1.4;
+    top: $global-bottom-margin * 0.5;
+  }
+
+  &::after {
+    content: '”';
+    float: right;
+    right: -$global-bottom-margin * 0.8;
+    bottom: -$global-bottom-margin * 0.15;
+  }
+}
+
+.quote__author {
+  display: block;
+  position: relative;
+  @include font(12px, 22px);
+  font-family: $regular-font;
+  font-weight: 700;
+  margin: $global-bottom-margin $global-bottom-margin * 0.5 20px;
+}
+
+.quote + .button {
+  display: inline-block;
+  margin-left: $global-bottom-margin * 0.5;
+
+  @include media("<md") {
+    margin-left: $global-bottom-margin * 0.5;
+  }
+}

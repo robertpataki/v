@@ -1,15 +1,15 @@
 .minicard {
   position: relative;
-  padding-bottom: 21px;
 
   @include clearfix;
 
   &:not(:first-of-type) {
-    padding-top: 10px;
+    padding-top: 24px;
   }
 
   &:not(:last-of-type) {
     border-bottom: 1px solid #cccccc;
+    padding-bottom: 28px;
   }
 }
 
