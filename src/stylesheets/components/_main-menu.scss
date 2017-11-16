@@ -4,6 +4,7 @@
   position: relative;
   display: block;
   font-family: $semibold-font;
+  margin-bottom: 12px;
 
   @extend %no-select;
   @extend %inline-list;

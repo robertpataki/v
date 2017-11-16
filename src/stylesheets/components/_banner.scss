@@ -1,0 +1,63 @@
+.banner-wrapper {
+  position: relative;
+  height: 100%;
+
+  .row,
+  .col {
+    height: 100%;
+    position: relative;
+  }
+}
+
+.banner {
+  display: inline-block;
+  position: absolute;
+  bottom: 36px;
+  left: 0;
+  right: 0;
+
+  @include media("<md") {
+    left: $grid-gutter-width-base * 0.25;
+    right: $grid-gutter-width-base * 0.25;
+  }
+}
+
+.banner__head {
+  background: #00aeef;
+}
+
+.banner__body {
+  background: $col-septenary;
+  padding: 14px;
+}
+
+.banner__title {
+  @include font(23px, 33px);
+  color: $col-septenary;
+  font-family: $bold-font;
+  margin: 0;
+  padding: 12px 14px 10px;
+
+  @include media("<md") {
+    @include font(20px, 28px);
+  }
+}
+
+.banner__text {
+  display: block;
+  font-family: $semibold-font; 
+  color: #333333;
+}
+
+.banner__button {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+
+  @include media("<sm") {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 10px;
+  }
+}

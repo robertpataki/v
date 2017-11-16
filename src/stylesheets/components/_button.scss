@@ -8,10 +8,22 @@
   padding: 4px 9px;
   text-decoration: none;
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+62,eeeeee+98 */
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 62%, #eeeeee 98%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 62%,#eeeeee 98%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 62%,#eeeeee 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$col-septenary+62,eeeeee+98 */
+  background: $col-septenary; /* Old browsers */
+  background: -moz-linear-gradient(top, $col-septenary 62%, #eeeeee 98%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $col-septenary 62%,#eeeeee 98%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $col-septenary 62%,#eeeeee 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$col-septenary', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+}
+
+.button--blue {
+  color: $col-septenary;
+  border-color: transparent;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2392d3+0,007ac2+100,007ac2+101 */
+  background: #2392d3; /* Old browsers */
+  background: -moz-linear-gradient(top, #2392d3 0%, #007ac2 100%, #007ac2 101%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #2392d3 0%,#007ac2 100%,#007ac2 101%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #2392d3 0%,#007ac2 100%,#007ac2 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2392d3', endColorstr='#007ac2',GradientType=0 ); /* IE6-9 */
 }
