@@ -1,0 +1,47 @@
+.quick-search-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  .quick-search {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    pointer-events: auto;
+  }
+
+  input {
+    width: 100%;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    background-color: #ededed;
+    color: #000000;
+    box-shadow: none;
+
+    @include font(12px, 16px);
+    @include link-hover(0.2s);
+    @include trans-easing($ease-in-out-back);
+
+    &:focus {
+      background-color: lighten(#ededed, 20%);
+
+      & + i {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+    }
+  }
+
+  i {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    height: 16px;
+
+    @include link-hover(0.2s);
+    @include trans-easing($ease-in-out-back);
+  }
+}

@@ -8,7 +8,7 @@
 
 @import 'utils/mixins';
 @import 'utils/placeholders';
-@import 'utils/easing-placeholders';
+@import 'utils/easing-functions';
 @import 'utils/utils';
 
 // Grid and Bootstrap settings
@@ -36,3 +36,6 @@
 @import 'components/searchbar';
 @import 'components/dropdown';
 @import 'components/radio-button';
+@import 'components/auth-menu';
+@import 'components/quick-search';
+@import 'components/mini-menu';

@@ -94,6 +94,8 @@
   }
 
   @include media("<lg") {
+    padding-top: 20px;
+    
     .form-field-wrapper {
       margin-bottom: 20px;
     }

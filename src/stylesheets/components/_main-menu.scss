@@ -1,6 +1,14 @@
 /* Main menu */
 
 .main-menu-wrapper {
+  @include media("<=lg", ">md") {
+    text-align: center;
+
+    .main-menu {
+      display: inline-block;
+    }
+  }
+
   @include media("<=md") {
     padding: 0;
   }

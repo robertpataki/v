@@ -13,15 +13,14 @@
   display: block;
   position: relative;
   color: #666666;
-
-  @include font(11px, 21px);
-
   padding: 0 6px 0;
   border-radius: $global-radius;
   border: 1px solid #e1e1e1;
   background-color: #f7f7f7;
   outline: none;
   box-shadow: none;
+
+  @include font(11px, 21px);
 }
 
 .form-field--light {

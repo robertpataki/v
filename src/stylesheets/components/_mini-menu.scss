@@ -1,0 +1,27 @@
+.mini-menu {
+  position: relative;
+  top: 40px;
+  pointer-events: none;
+  z-index: 1;
+
+  .auth-menu {
+    margin-top: 10px;
+  }
+
+  @include media("<lg") {
+    top: auto;
+    margin-top: 32px;
+    margin-bottom: 20px;
+
+    .auth-menu-wrapper {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .quick-search-wrapper,
+    .quick-search,
+    .quick-search input {
+      width: 100%;
+    }
+  }
+}
