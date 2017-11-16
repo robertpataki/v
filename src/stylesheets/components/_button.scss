@@ -2,11 +2,13 @@
   display: inline-block;
   border: 1px solid #e1e1e1;
   color: #0175b9;
-  @include font(13px, 16px);
   font-family: $semibold-font;
   border-radius: $global-radius;
   padding: 4px 9px;
   text-decoration: none;
+  text-align: center;
+
+  @include font(13px, 16px);
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$col-septenary+62,eeeeee+98 */
   background: $col-septenary; /* Old browsers */
@@ -26,4 +28,11 @@
   background: -webkit-linear-gradient(top, #2392d3 0%,#007ac2 100%,#007ac2 101%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #2392d3 0%,#007ac2 100%,#007ac2 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2392d3', endColorstr='#007ac2',GradientType=0 ); /* IE6-9 */
+}
+
+.button--big {
+  padding: 6px 15px;
+  font-family: $bold-font;
+  
+  @include font(16px, 26px);
 }

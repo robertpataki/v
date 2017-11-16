@@ -92,6 +92,10 @@ input[type='color'] {
   font-family: inherit;
   outline: none;
   box-shadow: none;
+
+  &::placeholder {
+    color: #000000;
+  }
 }
 textarea {
   resize: none;

@@ -1,0 +1,62 @@
+.searchbar-wrapper {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#007ac2+1,00aeef+100 */
+  background: #007ac2; /* Old browsers */
+  background: -moz-linear-gradient(top, #007ac2 1%, #00aeef 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #007ac2 1%,#00aeef 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #007ac2 1%,#00aeef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007ac2', endColorstr='#00aeef',GradientType=0 ); /* IE6-9 */
+}
+
+.searchbar {
+  position: relative;
+  z-index: 10;
+}
+
+.searchbar__top {
+  background: #007ac2;
+}
+.searchbar__bottom {
+  .form-field-wrapper,
+  .form-field {
+    position: relative;
+    width: 100%;
+  }
+
+  .button {
+    position: relative;
+    width: 100%;
+    top: 3px;
+  }
+}
+
+.searchbar__top,
+.searchbar__bottom {
+  padding: 10px 0;
+}
+
+.searchbar__form {
+  color: $col-septenary;
+  font-family: $semibold-font;
+
+  .form-field-wrapper {
+    color: $col-septenary;
+    top: -1px;
+    font-family: $regular-font;
+
+    @include font(14px, 10px);
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.searchbar__form-title {
+  @include font(18px, 28px);
+  margin-right: 10px;
+}
+
+.searchbar__dropdowns {
+  .form-field-wrapper--inline {
+    padding: 0;
+  }
+}

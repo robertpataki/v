@@ -1,12 +1,37 @@
+.form-field-wrapper {
+  display: block;
+  position: relative;
+}
+
+.form-field-wrapper--inline {
+  background: none;
+  border: none;
+  display: inline-block;
+}
+
 .form-field {
   display: block;
   position: relative;
-  border-radius: $global-radius;
-  outline: none;
-  border: 1px solid #e1e1e1;
-  background-color: #f7f7f7;
-  padding: 0 6px 0;
+  color: #666666;
 
   @include font(11px, 21px);
-  color: #666666;
+
+  padding: 0 6px 0;
+  border-radius: $global-radius;
+  border: 1px solid #e1e1e1;
+  background-color: #f7f7f7;
+  outline: none;
+  box-shadow: none;
+}
+
+.form-field--light {
+  background: $col-septenary;
+  border-color: $col-septenary;
+}
+
+.form-field__title {
+  display: block;
+  font-family: $regular-font;
+  @include font(12px, 16px);
+  margin-bottom: 4px;
 }
