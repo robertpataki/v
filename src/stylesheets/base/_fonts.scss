@@ -1,9 +1,9 @@
 //**
 // Font settings
 //**
-@include font-face("Rockwell Regular", "../fonts/Rockwell-Regular", $file-formats: woff2);
-@include font-face("Rockwell Bold", "../fonts/Rockwell-Bold", bold, $file-formats: woff2);
-@include font-face("Rockwell Italic", "../fonts/Rockwell-Italic", italic, $file-formats: woff2);
+@include font-face("Rockwell Regular", "../fonts/Rockwell-Regular", $file-formats: woff eot svg woff2);
+@include font-face("Rockwell Bold", "../fonts/Rockwell-Bold", bold, $file-formats: woff eot svg woff2);
+@include font-face("Rockwell Italic", "../fonts/Rockwell-Italic", italic, $file-formats: woff eot svg woff2);
 
 $regular-font: Arial, Verdana, sans-serif;
 $semibold-font: "Rockwell Regular", "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
