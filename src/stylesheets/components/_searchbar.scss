@@ -12,23 +12,6 @@
   z-index: 10;
 }
 
-.searchbar__top {
-  background: #007ac2;
-}
-.searchbar__bottom {
-  .form-field-wrapper,
-  .form-field {
-    position: relative;
-    width: 100%;
-  }
-
-  .button {
-    position: relative;
-    width: 100%;
-    top: 3px;
-  }
-}
-
 .searchbar__top,
 .searchbar__bottom {
   padding: 10px 0;
@@ -58,5 +41,55 @@
 .searchbar__dropdowns {
   .form-field-wrapper--inline {
     padding: 0;
+  }
+}
+
+.searchbar__top {
+  background: #007ac2;
+
+  @include media("<lg") {
+    padding: 15px 12px 20px;
+    
+    .searchbar__form-title {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  @include media("<md") {
+    padding-bottom: 10px;
+
+    .searchbar__form-title {
+      margin-bottom: 20px;
+    }
+
+    .form-field-wrapper {
+      display: inline-block;
+      width: 45%;
+      margin-bottom: 12px;
+      
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include media("<sm") {
+    .form-field-wrapper {
+      width: 100%;
+    }
+  }
+}
+.searchbar__bottom {
+  .form-field-wrapper,
+  .form-field {
+    position: relative;
+    width: 100%;
+  }
+
+  .button {
+    position: relative;
+    width: 100%;
+    top: 3px;
   }
 }
