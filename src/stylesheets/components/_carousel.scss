@@ -3,6 +3,10 @@
   height: 360px;
 }
 
+.carousel__items {
+  margin: 0 auto;
+}
+
 .carousel__item {
   @extend %full-screen;
 
