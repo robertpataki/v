@@ -92,4 +92,24 @@
     width: 100%;
     top: 3px;
   }
+
+  @include media("<lg") {
+    .form-field-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: block;
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      top: auto;
+    }
+  }
+
+  @include media("<lg", ">md") {
+    .button {
+      top: -10px;
+    }
+  }
 }

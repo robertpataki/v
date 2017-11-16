@@ -3,6 +3,7 @@
 .dropdown {
   /* Size & position */
   position: relative;
+  z-index: 100;
   width: 100%;
   margin: 0 auto;
   padding: 6px 8px 7px;
@@ -102,6 +103,7 @@
   box-shadow: none;
   border-bottom: none;
   color: white;
+  z-index: 101;
 
   &::after {
     border-color: #82d1ff transparent;    
