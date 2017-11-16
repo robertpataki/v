@@ -1,5 +1,11 @@
 /* Main menu */
 
+.main-menu-wrapper {
+  @include media("<=md") {
+    padding: 0;
+  }
+}
+
 .main-menu {
   position: relative;
   display: block;
@@ -14,6 +20,22 @@
 
     &:not(:last-child) {
       margin-right: 1.25rem;
+    }
+  }
+
+  @include media("<md") {
+    margin-bottom: 0;
+
+    li {
+      width: 25%;
+      
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    .icon-button {
+      border-radius: 0;
     }
   }
 }
