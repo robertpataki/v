@@ -21,6 +21,12 @@
   box-shadow: none;
 
   @include font(11px, 21px);
+  @include link-hover(0.2s);
+  @include trans-easing($ease-in-out-back);
+
+  &:focus {
+    background: $col-septenary;
+  }
 }
 
 .form-field--light {

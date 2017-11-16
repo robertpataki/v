@@ -9,6 +9,7 @@
   text-align: center;
 
   @include font(13px, 16px);
+  @include link-hover();
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$col-septenary+62,eeeeee+98 */
   background: $col-septenary; /* Old browsers */
@@ -35,4 +36,10 @@
   font-family: $bold-font;
   
   @include font(16px, 26px);
+}
+
+@include hover-state {
+  .button:hover {
+    opacity: 0.75;
+  }
 }
