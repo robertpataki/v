@@ -60,7 +60,7 @@
 .icon-button--two {
   background: #00ac51;
 
-  @include media("<=md", ">=sm") {
+  @include media("<=md", ">sm") {
     i {
       top: 4px;
     }
@@ -70,7 +70,7 @@
 .icon-button--three {
   background: #bcd631;
 
-  @include media("<=md", ">=sm") {
+  @include media("<=md", ">sm") {
     i {
       top: 2px;
     }
@@ -80,13 +80,13 @@
 .icon-button--four {
   background: #ee4a9a;
 
-  @include media("<=md", ">=sm") {
+  @include media("<=md", ">sm") {
     i {
       top: 1px;
     }
   }
 
-  @include media("<sm") {
+  @include media("<=sm") {
     i {
       position: relative;
       top: 5px;

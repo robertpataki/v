@@ -23,9 +23,7 @@
     }
   }
 
-  @include media("<md") {
-    // margin-bottom: 0;
-
+  @include media("<=md") {
     li {
       width: 25%;
       
