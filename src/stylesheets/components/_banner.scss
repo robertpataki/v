@@ -13,10 +13,10 @@
   display: inline-block;
   position: absolute;
   bottom: 36px;
-  left: 0;
+  left: $grid-gutter-width-base * 0.5;
   right: 0;
 
-  @include media("<=md") {
+  @include media("<=sm") {
     left: $grid-gutter-width-base * 0.25;
     right: $grid-gutter-width-base * 0.25;
   }
